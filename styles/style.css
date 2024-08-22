@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif!important;
+}
+.header{
+    background-image: linear-gradient(0.00deg, rgb(192, 9, 9),rgba(4, 1, 1, 0) 100%);
+}

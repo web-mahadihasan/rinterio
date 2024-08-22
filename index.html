@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- DaisyUI & Tailwind CDN link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI & Tailwind CDN link  -->
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Remix Icons -->
+
+    <!-- Google font  -->
+   <link rel="stylesheet" href="styles/style.css">
+    <!-- Google font  -->
+
+    <!-- Tailwind customization  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'white-color': 'rgb(255, 255, 255)',
+                        'primary-color': '#ABEF5F',
+                        'primary-color-light': 'rgba(171, 239, 95, 0.5)',
+                        'text-light': 'rgb(115, 115, 115)',
+                        'text-dark': 'rgb(73, 73, 73)',
+                        'text-black': 'rgb(33, 33, 33)',
+                        'bg-secondary': 'rgb(244, 244, 244)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Tailwind customization  -->
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header class=" container mx-auto pt-10">
+        <div class="navbar justify-between">
+            <div class="flex justify-between w-full lg:w-auto">
+                
+                <div class="flex items-center">
+                    <span class=""><i class="ri-arrow-right-up-line p-2 bg-primary-color align-middle mr-1 rounded-full"></i></span>
+                    <span class="font-extrabold text-3xl text-text-black">Rinterio</span>
+                </div>
+
+                <div class="dropdown dropdown-end ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <label class="btn btn-circle swap swap-rotate">
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+                        
+                            <!-- hamburger icon -->
+                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                            </svg>
+                        
+                            <!-- close icon -->
+                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                                <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul tabindex="0" class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen md:w-80 p-2 shadow space-y-2">
+                        <li><a class="font-extrabold text-base text-black">Home</a></li>
+                        <li><a class="text-slate-600 font-normal text-text-light">Services</a></li>
+                        <li><a class="text-slate-600 font-normal text-text-light">Portfolio</a></li>
+                        <li><a class="text-slate-600 font-normal text-text-light">Blogs</a></li>
+                        <li><a class="text-slate-600 font-normal text-text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class=" hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-extrabold text-base text-black">Home</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Services</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Portfolio</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Blogs</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class=" list-none space-x-2 hidden md:flex">
+                <li class="btn btn-circle bg-white-color">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </li>
+                <li class="bg-white-color">
+                    <svg width="48.015961" height="47.016113" viewBox="0 0 48.016 48.0161" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000" transform="translate(0.515961 0.500000) rotate(0.019056)" fill="#FFFFFF" fill-opacity="1.000000" /> <path id="Vector" d="M20 28L27.26 28C31.75 28.01 32.44 25.19 33.26 21.08C33.5 19.89 33.62 19.3 33.34 18.9C33.05 18.51 32.5 18.51 31.4 18.51L18 18.5" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />  <path id="Vector" d="M20 28L17.38 15.52C17.16 14.63 16.36 14 15.44 14L14.51 14" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" /> <path id="Vector" d="M20.88 28L20.47 28C19.11 28 18 29.15 18 30.57C18 30.81 18.18 31 18.41 31L29.5 31" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" /> <path id="Vector"  d="M22.5 34C21.67 34 21 33.33 21 32.5C21 31.67 21.67 31 22.5 31C23.33 31 24 31.67 24 32.5C24 33.33 23.33 34 22.5 34Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" /> <path id="Vector" d="M29.5 34C28.67 34 28 33.33 28 32.5C28 31.68 28.67 31 29.5 31C30.33 31.01 31 31.68 31 32.51C31 33.33 30.33 34.01 29.5 34Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" /> <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000" transform="translate(0.515961 0.500000) rotate(0.019056)" stroke="#E9E9E9" stroke-opacity="1.000000" stroke-width="1.000000" />
+                    </svg>
+                </li>
+                <li class="flex items-center py-2 px-3 bg-primary-color rounded-full">
+                    <span class="font-extrabold text-lg text-text-black">Book Consult</span>
+                    <span class=""><i class="ri-arrow-right-up-line p-2 bg-black text-white align-middle ml-1 rounded-full"></i></span>
+                </li>
+                
+            </div>
+        </div>
+        <!-- Banner section starts -->
+         <div class="flex flex-col items-center space-y-6">
+            <div class="banner-img">
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <div class="flex flex-col md:items-center text-center space-y-6">
+                <h1 class="font-extrabold text-6xl text-text-black xl:w-[75%]">A barn house of this design has a striking appearance</h1>
+                <p class="font-medium text-base text-text-light xl:w-[60%]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+                metal accents, and large windows that flood the space with natural light.</p>
+                <button class="flex items-center py-2 px-4 bg-primary-color-light rounded-full justify-center">
+                    <span class="font-bold text-lg text-text-black">View Details</span>
+                    <span class=""><i class="ri-arrow-right-up-line p-2 bg-primary-color text-white align-middle ml-1 rounded-full"></i></span>
+                </button>
+            </div>
+         </div>
+        <!-- Banner section ends -->
+
+    </header>
+    <!-- header section ends -->
+    
+
+    <!-- main section starts -->
+    <main class="mt-24">
+        <!-- About us section starts  -->
+        <div class="bg-bg-secondary">
+            <div class="container mx-auto">
+                <div class="relative">
+                    <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-12 items-center py-24">
+                       <div class="order-2 flex justify-end">
+                            <img src="./assets/about-us.png" class="w-[580px] h-[600px] rounded-lg shadow-2xl"/>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="py-2 px-3 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
+                                <!-- <i class="ri-arrow-right-line ml-2"></i> -->
+                                <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000"  stroke-linecap="round" />
+                                    <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34"  stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"  stroke-linecap="round" />
+                                </svg>
+                                <span class="font-bold ml-2">About Us</span></p>
+                            <h1 class="text-5xl font-bold text-text-black">We design thoughtful, liveable spaces</h1>
+                            <p class="py-6 font-medium text-text-dark text-base">
+                                At Rinterio, we offer rental homes that combine comfort and style. Our properties are carefully selected to enhance your living experience, blending modern amenities with practical design. Find a space that truly feels like home and supports your lifestyle.
+                            </p>
+            
+                            <div class="space-y-5">
+                                <div class="p-7 flex items-center space-x-6 bg-white rounded-lg">
+                                    <img src="./assets/commercial.png" alt="">
+                                    <div>
+                                        <h4 class="font-extrabold text-lg text-text-dark">Commercial</h4>
+                                        <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style, perfect for businesses seeking dynamic and adaptable spaces.</p>
+                                    </div>
+                                </div>
+                                <div class="p-7 flex items-center space-x-6 bg-white rounded-lg">
+                                    <img src="./assets/residential.png" alt="">
+                                    <div>
+                                        <h4 class="font-extrabold text-lg text-text-dark">Residential</h4>
+                                        <p class="text-base font-medium text-text-light mt-2">Charming residential houses designed for comfort and style, creating a perfect home for relaxing and enjoying life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/Vector.png" alt="" class="absolute top-[5%] left-[-2%] hidden rotate-1 lg:block">
+                </div>
+            </div>
+        </div>
+        <!-- About us section ends -->
+    </main>
+    <!-- main section ends -->
+
+    <!-- footer section starts -->
+    <footer>
+
+    </footer>
+    <!-- footer section ends -->
+</body>
+
+</html>
