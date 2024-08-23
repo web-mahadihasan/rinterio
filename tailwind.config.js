@@ -10,7 +10,11 @@ module.exports = {
       "text-black": "rgb(33, 33, 33)",
       "bg-secondary": "rgb(244, 244, 244)",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'review': "url('../assets/review-2.jpg')",
+      },
+    },
   },
   plugins: [],
 };

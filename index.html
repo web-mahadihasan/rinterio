@@ -24,6 +24,9 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    backgroundImage: {
+                        'review': "url('../assets/review-2.jpg')",
+                    },
                     colors: {
                         'white-color': 'rgb(255, 255, 255)',
                         'primary-color': '#ABEF5F',
@@ -32,7 +35,10 @@
                         'text-dark': 'rgb(73, 73, 73)',
                         'text-black': 'rgb(33, 33, 33)',
                         'bg-secondary': 'rgb(244, 244, 244)',
-                    }
+                    },
+                    boxShadow: {
+                        'custom-light': 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+                    },
                 }
             }
         }
@@ -198,7 +204,7 @@
                             <img src="./assets/about-us.png" class="w-full lg:w-[580px] h-[600px] rounded-lg shadow-2xl"/>
                         </div>
                         <div class="space-y-4 text-center lg:text-left">
-                            <p class="py-2 px-3 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
+                            <p class="py-2 px-4 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
                                 <!-- <i class="ri-arrow-right-line ml-2"></i> -->
                                 <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -212,17 +218,17 @@
                             </p>
             
                             <div class="text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 md:gap-4 lg:space-y-3">
-                                <div class="p-5 lg:p-7 flex items-center space-x-6 bg-white rounded-lg">
+                                <div class="p-5 lg:p-7 flex items-center space-x-6 bg-white rounded-lg shadow-sm">
                                     <img src="./assets/commercial.png" alt="">
                                     <div>
-                                        <h4 class="font-extrabold text-lg text-text-dark">Commercial</h4>
+                                        <h4 class="font-extrabold text-xl text-text-dark">Commercial</h4>
                                         <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style, perfect for businesses seeking dynamic spaces.</p>
                                     </div>
                                 </div>
-                                <div class="p-5 lg:p-7 flex items-center space-x-6 bg-white rounded-lg">
+                                <div class="p-5 lg:p-7 flex items-center space-x-6 bg-white rounded-lg shadow-sm">
                                     <img src="./assets/residential.png" alt="">
                                     <div>
-                                        <h4 class="font-extrabold text-lg text-text-dark">Residential</h4>
+                                        <h4 class="font-extrabold text-xl text-text-dark">Residential</h4>
                                         <p class="text-base font-medium text-text-light mt-2">Charming residential houses designed for comfort and style, creating a perfect home for relaxing and enjoying life.</p>
                                     </div>
                                 </div>
@@ -234,7 +240,7 @@
 
             <!-- stat section  -->
              <div class="container mx-auto">
-                <div class="grid grid-cols-1 bg-white rounded-2xl w-full shadow p-8 space-y-6 md:grid-cols-2 lg:grid-cols-4 ">
+                <div class="grid grid-cols-1 bg-white rounded-2xl w-full shadow-sm p-8 space-y-6 md:grid-cols-2 lg:grid-cols-4 ">
                     <div class="stat text-center space-y-2">
                         
                         <div class="flex justify-center">
@@ -299,7 +305,7 @@
         <!-- Our works process section starts  -->
          <div class="container mx-auto mt-24">
             <div class="space-y-4 text-center">
-                <p class="py-2 px-3 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
+                <p class="py-2 px-4 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
                     <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
@@ -307,23 +313,433 @@
                     </svg>
                     <span class="font-bold ml-2">How we works</span>
                 </p>
-                <h1 class="text-3xl font-black text-text-black md:text-5xl">We design thoughtful, <br> liveable spaces</h1>
-                <p class="py-6 font-medium text-text-dark text-base">
-                    At Rinterio, we offer rental homes that combine comfort and style. Our properties are carefully selected to
-                    enhance your living experience, blending modern amenities with practical design. Find a space that truly feels
-                    like home and supports your lifestyle.
+                <h1 class="text-3xl font-black text-text-black md:text-5xl">Our Works Process</h1>
+                <p class="py-6 font-medium text-text-dark text-base max-w-[670px] mx-auto">
+                    “Our Working process involves transforming concepts into detailed designs, overseeing the construction, and meticulous budget
+                    planning to ensure successful project completion.”
                 </p>
             </div>
+            <!-- cards -->
+             <div class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 xl:grid-cols-4">
+                <!-- card 1 -->
+                <div class="card bg-[#E7C1D3] text-primary-content">
+                    <div class="card-body shadow-sm">
+                        <img src="./assets/concept.png" alt="Concept" class="w-12">
+                        <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Concept</h2>
+                        <p class="font-medium text-text-dark text-base">We start by understanding needs, and goals to create a tailored design concept that aligns with your project requirements</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-[#EFDA6E] text-primary-content">
+                    <div class="card-body">
+                        <img src="./assets/design-process.png" alt="Concept" class="w-12">
+                        <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Design Process</h2>
+                        <p class="font-medium text-text-dark text-base">We develop detailed plans and 3D renderings, refining the design through iterative feedback to ensure it meets your needs.</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-[#A4DAC3] text-primary-content">
+                    <div class="card-body">
+                        <img src="./assets/vision.png" alt="Concept" class="w-12">
+                        <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Supervision</h2>
+                        <p class="font-medium text-text-dark text-base">We oversee construction to ensure quality and adherence to design, promptly addressing issues to keep the project on
+                        schedule.</p>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card bg-[#77AAEA] text-primary-content ">
+                    <div class="card-body">
+                        <img src="./assets/budget-planning.png" alt="Concept" class="w-12">
+                        <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Budget Planning</h2>
+                        <p class="font-medium text-text-dark text-base">We meticulously plan and manage budgets, ensuring transparency and cost-effectiveness throughout the project to avoid
+                        unexpected expenses</p>
+                    </div>
+                </div>
+             </div>
          </div>
         <!-- Our works process section ends -->
+
+        <!-- Lasted portfolio starts  -->
+         <div class="w-full lg:bg-white mt-24">
+                <div class="container mx-auto lg:py-24">
+                    <div class="space-y-4 text-center">
+                        <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
+                            <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000"
+                                    stroke-width="1.500000" stroke-linecap="round" />
+                                <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34"
+                                    stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <span class="font-bold ml-2">Explore our Latest works</span>
+                        </p>
+                        <h1 class="text-3xl font-black text-text-black md:text-5xl">Our Latest Portfolio</h1>
+                        <p class="py-6 font-medium text-text-dark text-base max-w-[670px] mx-auto">
+                            “Explore our recent projects, showcasing innovative designs and successful implementations in both commercial and
+                            residential spaces.”
+                        </p>
+                    </div>
+                <!-- portfolio cards -->
+                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12 mt-8">
+                    <!-- Cards 1 -->
+                    <div class=" flex flex-col gap-6 p-5 rounded-xl shadow-custom-light md:flex-row md:col-span-2 lg:col-span-8 order-1">
+                        <img src="./assets/portfolio-1.png" alt="commercial" class="w-full md:w-fit h-[200px]">
+                        <div class="space-y-4">
+                            <h4 class="font-extrabold text-2xl text-text-dark">Commercial</h4>
+                            <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style, perfect for businesses seeking dynamic spaces.</p>
+                            <div class="flex items-center">
+                                <span class="font-extrabold text-xl text-text-black">View Details</span>
+                                <span class="p-1 bg-primary-color rounded-full ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="size-5 bg-primary-color align-middle">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cards 2 -->
+                    <div class="p-5 rounded-xl shadow-custom-light md:col-span-1 lg:col-span-4 order-2">
+                       <img src="./assets/portfolio-2.png" alt="Portfoio 2" class="w-full h-[200px]">
+                    </div>
+                    <!-- cards 3 -->
+                    <div class="p-5 rounded-xl shadow-custom-light md:col-span-1 lg:hidden order-3">
+                        <img src="./assets/portfolio-5.png" alt="Portfolio 3" class="w-full h-[200px]">
+                    </div>
+                    <!-- Cards 4 -->
+                    <div class="flex flex-col gap-6 p-5 rounded-xl shadow-custom-light md:flex-row md:col-span-2 lg:col-span-6 order-4">
+                        <img src="./assets/portfolio-4.png" alt="commercial" class="w-full md:w-fit h-[200px]">
+                        <div class="space-y-4">
+                            <h4 class="font-extrabold text-2xl text-text-dark">Residential</h4>
+                            <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style,
+                                perfect for businesses seeking dynamic spaces.</p>
+                            <div class="flex items-center">
+                                <span class="font-extrabold text-xl text-text-black">View Details</span>
+                                <span class="p-1 bg-primary-color rounded-full ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="size-5 bg-primary-color align-middle">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cards 5 -->
+                    <div class="p-5 rounded-xl shadow-custom-light md:col-span-1 lg:col-span-3 order-5 lg:order-3">
+                       <img src="./assets/portfolio-3.png" alt="Porfolio 5" class="w-full h-[200px]">
+                    </div>
+                    <!-- Cards 6 -->
+                    <div class="p-5 rounded-xl shadow-custom-light  md:col-span-1 lg:col-span-3 order-6">
+                        <img src="./assets/portfolio-5.png" alt="Portfolio 3" class="w-full h-[200px]">
+                    </div>
+                 </div>
+            </div>
+         </div>
+        <!-- Lasted portfolio ends -->
+
+        <!-- Bonus part client review  -->
+
+        <!-- client review starts  -->
+         <div>
+            <div class="container mx-auto">
+                <div class="space-y-4 text-center">
+                    <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
+                        <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000"
+                                stroke-width="1.500000" stroke-linecap="round" />
+                            <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34"
+                                stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span class="font-bold ml-2">See Our Review</span>
+                    </p>
+                    <h1 class="text-3xl font-black text-text-black md:text-5xl">What Our User Say About Us</h1>
+                    <p class="py-6 font-medium text-text-dark text-base max-w-[670px] mx-auto">
+                        “Explore our recent projects, showcasing innovative designs and successful implementations in both commercial
+                        and
+                        residential spaces.”
+                    </p>
+                </div>
+                <!-- Carousel  -->
+                <div class="carousel w-full">
+                    <!-- slide 1 -->
+                    <div id="slide1" class="carousel-item w-full relative bg-review bg-center bg-no-repeat bg-cover">
+                        <div class="py-10 mx-auto flex items-end">           
+                            <div class="relative z-20 max-w-6xl mx-auto mt-8 md:flex md:items-center xl:mt-12">
+                                <div class="absolute w-full bg-primary-color -z-10 md:h-96 rounded-2xl"></div>
+            
+                                <div
+                                    class="w-full px-4 py-10 bg-primary-color md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                                    <img src="./assets/review1.jpg" alt="client photo"
+                                        class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl" />
+            
+                                    <div class="md:mx-6">
+                                        <div>
+                                            <p class="text-xl font-extrabold text-text-black ">Amelia Rose</p>
+                                            <p class="text-base text-text-dark font-medium ">Marketing Manager at Stech</p>
+                                        </div>
+            
+                                        <p class="mt-4 text-lg leading-relaxed md:text-xl">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="w-8 h-8 text-black ">
+                                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                                            </svg>
+                                            I had a wonderful experience working with Rinterio. They really took the time to
+                                            understand what was important to me and helped me for my dream house that was not only
+                                            beautiful but also eco-friendly and energy-efficient.
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="absolute right-[8%] w-8 h-8 text-black">
+                                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                                            </svg>
+                                        </p>
+                                        <!-- Button -->
+                                        <div class="flex items-end justify-between mt-6 md:justify-start">
+                                            <a href="#slide4"
+                                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full hover:bg-blue-400">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                                </svg>
+                                            </a>
+                                        
+                                            <a href="#slide2"
+                                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full md:mx-6 hover:bg-blue-400">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button  -->
+                        <!-- <div class="flex items-end justify-between mt-6 md:justify-start">
+                            <a href="#slide4"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full hover:bg-blue-400 absolute z-40 md:bottom-[50%] md:left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </a>
+            
+                            <a href="#slide2"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full md:mx-6 hover:bg-blue-400 absolute md:right-0 md:bottom-[50%] z-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+            
+                    <!-- slide 2 -->
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class=" px-6 py-10 mx-auto  bg-no-repeat bg-center bg-cover">
+            
+                            <div class="relative z-20 max-w-6xl mx-auto mt-8 md:flex md:items-center xl:mt-12">
+                                <div class="absolute w-full bg-primary-color -z-10 md:h-96 rounded-2xl"></div>
+            
+                                <div
+                                    class="w-full p-6 bg-primary-color md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                                    <img class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+                                        src="./assets/review3.jpg" alt="client photo" />
+            
+                                    <div class="mt-2 md:mx-6">
+                                        <div>
+                                            <p class="text-xl font-extrabold text-text-black ">Laura Hughes</p>
+                                            <p class="text-base text-text-dark font-medium ">CEO at Omega Holdings</p>
+                                        </div>
+            
+                                        <p class="mt-4 text-lg leading-relaxed md:text-xl">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="w-8 h-8 text-black ">
+                                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                                            </svg>
+                                            Impressive supervision and quality control throughout the project by Rinterio. The team
+                                            addressed every concern promptly and ensured that construction stayed on schedule. Their
+                                            hands-on approach and dedication were evident.
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="absolute right-[8%] w-8 h-8 text-black">
+                                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button  -->
+                        <!-- <div class="flex items-center justify-between mt-6 md:justify-start">
+                            <a href="#slide1"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full hover:bg-blue-400 absolute left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </a>
+            
+                            <a href="#slide3"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full md:mx-6 hover:bg-blue-400 absolute right-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+            
+                    <!-- slide 3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <div class=" px-6 py-10 mx-auto  bg-no-repeat bg-center bg-cover">
+            
+                            <div class="relative z-20 max-w-6xl mx-auto mt-8 md:flex md:items-center xl:mt-12">
+                                <div class="absolute w-full bg-primary-color -z-10 md:h-96 rounded-2xl"></div>
+            
+                                <div
+                                    class="w-full p-6 bg-primary-color md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                                    <img class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+                                        src="./assets/review2.jpg" alt="client photo" />
+            
+                                    <div class="mt-2 md:mx-6">
+                                        <div>
+                                            <p class="text-xl font-extrabold text-text-black ">Emily Roberts</p>
+                                            <p class="text-base text-text-dark font-medium">Director of Finance, Beta Solutions</p>
+                                        </div>
+            
+                                        <p class="mt-4 text-lg leading-relaxed md:text-xl">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="w-8 h-8 text-black ">
+                                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                                            </svg>
+                                            Rinterio’s budget planning was transparent and precise. They provided clear estimates
+                                            and managed costs effectively, ensuring we stayed within budget while achieving
+                                            top-notch quality. Their financial acumen was impressive.
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="absolute right-[8%] w-8 h-8 text-black">
+                                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button  -->
+                        <!-- <div class="flex items-center justify-between mt-6 md:justify-start">
+                            <a href="#slide2"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full hover:bg-blue-400 absolute left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </a>
+            
+                            <a href="#slide4"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full md:mx-6 hover:bg-blue-400 absolute right-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                    <!-- slide 4 -->
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class=" px-6 py-10 mx-auto  bg-no-repeat bg-center bg-cover">
+            
+                            <div class="relative z-20 max-w-6xl mx-auto mt-8 md:flex md:items-center xl:mt-12">
+                                <div class="absolute w-full bg-primary-color -z-10 md:h-96 rounded-2xl"></div>
+            
+                                <div
+                                    class="w-full p-6 bg-primary-color md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
+                                    <img class="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+                                        src="./assets/review4.jpg" alt="client photo" />
+            
+                                    <div class="mt-2 md:mx-6">
+                                        <div>
+                                            <p class="text-xl font-extrabold text-text-black ">James Wilson</p>
+                                            <p class="text-base text-text-dark font-medium ">Residential Property Owner</p>
+                                        </div>
+            
+                                        <p class="mt-4 text-lg leading-relaxed md:text-xl">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="w-8 h-8 text-black ">
+                                                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                                                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+                                            </svg>
+                                            Rinterio is a highly professional team that blends innovative design with effective
+                                            project management. They were proactive in their communication and dedicated to
+                                            delivering exceptional results. Highly recommended for any design
+                                            needs.
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                                class="absolute right-[8%] w-8 h-8 text-black">
+                                                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                                                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+                                            </svg>
+                                        </p>
+            
+                                        <div class="flex items-center justify-between mt-6 md:justify-start">
+                                            <a href="#slide3" title="left arrow"
+                                                class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-blue-400">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                                </svg>
+                                            </a>
+            
+                                            <a href="#slide1" title="right arrow"
+                                                class="p-2 text-white transition-colors duration-300 border rounded-full rtl:-scale-x-100 md:mx-6 hover:bg-blue-400">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button  -->
+                        <!-- <div class="flex items-center justify-between mt-6 md:justify-start">
+                            <a href="#slide3"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full hover:bg-blue-400 absolute left-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </a>
+            
+                            <a href="#slide1"
+                                class="p-2 bg-text-black text-white transition-colors duration-300 border rounded-full md:mx-6 hover:bg-blue-400 absolute right-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linec ap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- client review ends -->
     </main>
     <!-- main section ends -->
 
+
     <!-- footer section starts -->
-    <footer>
+    <footer class="mt-24">
+
 
     </footer>
-    <!-- footer section ends -->
+    <!-- footer section ends --> 
 </body>
 
 </html>
