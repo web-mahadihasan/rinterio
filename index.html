@@ -42,43 +42,101 @@
 
 <body>
     <!-- header section starts -->
-    <header class=" container mx-auto pt-10">
-        <div class="navbar justify-between">
-            <div class="flex justify-between w-full lg:w-auto">
+    <header class=" container mx-auto px-4 pt-10">
+        <div class="navbar justify-between flex">
+            <div class="flex justify-between lg:w-auto">
                 
                 <div class="flex items-center">
-                    <span class=""><i class="ri-arrow-right-up-line p-2 bg-primary-color align-middle mr-1 rounded-full"></i></span>
+                    <span class="p-1 bg-primary-color rounded-full mr-1">
+                        <!-- <i class="ri-arrow-right-up-line p-2 bg-primary-color align-middle mr-1 rounded-full"></i>
+                         -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="size-6 bg-primary-color align-middle">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg>
+                    </span>
                     <span class="font-extrabold text-3xl text-text-black">Rinterio</span>
                 </div>
-
-                <div class="dropdown dropdown-end ">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <label class="btn btn-circle swap swap-rotate">
-                            <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" />
-                        
-                            <!-- hamburger icon -->
-                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
-                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-                            </svg>
-                        
-                            <!-- close icon -->
-                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
-                                <polygon
-                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-                            </svg>
-                        </label>
-                    </div>
-                    <ul tabindex="0" class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen md:w-80 p-2 shadow space-y-2">
-                        <li><a class="font-extrabold text-base text-black">Home</a></li>
-                        <li><a class="text-slate-600 font-normal text-text-light">Services</a></li>
-                        <li><a class="text-slate-600 font-normal text-text-light">Portfolio</a></li>
-                        <li><a class="text-slate-600 font-normal text-text-light">Blogs</a></li>
-                        <li><a class="text-slate-600 font-normal text-text-light">Contact Us</a></li>
-                    </ul>
-                </div>
-
+                <!-- extra div end korchi -->
             </div>
+
+                <!-- ----- -->
+                 <!-- extra div add korlm -->
+            <!-- <div class="flex justify-between col-span-2"> -->
+                <div class=" list-none space-x-2 hidden md:flex lg:order-3">
+                    <li class="btn btn-circle bg-white-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </li>
+                    <li class="bg-white-color">
+                        <svg width="48.015961" height="47.016113" viewBox="0 0 48.016 48.0161" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000"
+                                transform="translate(0.515961 0.500000) rotate(0.019056)" fill="#FFFFFF" fill-opacity="1.000000" />
+                            <path id="Vector"
+                                d="M20 28L27.26 28C31.75 28.01 32.44 25.19 33.26 21.08C33.5 19.89 33.62 19.3 33.34 18.9C33.05 18.51 32.5 18.51 31.4 18.51L18 18.5"
+                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
+                            <path id="Vector" d="M20 28L17.38 15.52C17.16 14.63 16.36 14 15.44 14L14.51 14" stroke="#737373"
+                                stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
+                            <path id="Vector" d="M20.88 28L20.47 28C19.11 28 18 29.15 18 30.57C18 30.81 18.18 31 18.41 31L29.5 31"
+                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
+                                stroke-linecap="round" />
+                            <path id="Vector"
+                                d="M22.5 34C21.67 34 21 33.33 21 32.5C21 31.67 21.67 31 22.5 31C23.33 31 24 31.67 24 32.5C24 33.33 23.33 34 22.5 34Z"
+                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" />
+                            <path id="Vector"
+                                d="M29.5 34C28.67 34 28 33.33 28 32.5C28 31.68 28.67 31 29.5 31C30.33 31.01 31 31.68 31 32.51C31 33.33 30.33 34.01 29.5 34Z"
+                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" />
+                            <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000"
+                                transform="translate(0.515961 0.500000) rotate(0.019056)" stroke="#E9E9E9" stroke-opacity="1.000000"
+                                stroke-width="1.000000" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center py-2 px-3 bg-primary-color rounded-full">
+                        <span class="font-extrabold text-lg text-text-black">Book Consult</span>
+                        <span class="p-1 bg-text-black rounded-full ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 align-middle text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </span>
+                    </li>
+                
+                </div>
+                <!-- ----- -->
+
+
+            <!-- ---  -->
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <label class="btn btn-circle bg-white  swap swap-rotate">
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" />
+            
+                        <!-- hamburger icon -->
+                        <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 512 512">
+                            <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                        </svg>
+            
+                        <!-- close icon -->
+                        <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 512 512">
+                            <polygon
+                                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                        </svg>
+                    </label>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen h-screen md:w-80 md:h-80 p-2 shadow space-y-3 flex flex-col items-center">
+                    <li><a class="font-extrabold text-base text-black">Home</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Services</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Portfolio</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Blogs</a></li>
+                    <li><a class="text-slate-600 font-normal text-text-light">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- ---  -->
             <div class=" hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
                     <li><a class="font-extrabold text-base text-black">Home</a></li>
@@ -88,7 +146,8 @@
                     <li><a class="text-slate-600 font-normal text-text-light">Contact Us</a></li>
                 </ul>
             </div>
-            <div class=" list-none space-x-2 hidden md:flex">
+        <!-- </div> -->
+            <!-- <div class=" list-none space-x-2 hidden md:flex md:order-2">
                 <li class="btn btn-circle bg-white-color">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
@@ -99,10 +158,14 @@
                 </li>
                 <li class="flex items-center py-2 px-3 bg-primary-color rounded-full">
                     <span class="font-extrabold text-lg text-text-black">Book Consult</span>
-                    <span class=""><i class="ri-arrow-right-up-line p-2 bg-black text-white align-middle ml-1 rounded-full"></i></span>
+                <span class="p-1 bg-text-black rounded-full ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="size-6 align-middle text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </span>
                 </li>
                 
-            </div>
+            </div> -->
         </div>
         <!-- Banner section starts -->
          <div class="flex flex-col items-center space-y-6">
@@ -110,7 +173,7 @@
                 <img src="./assets/banner.png" alt="">
             </div>
             <div class="flex flex-col md:items-center text-center space-y-6">
-                <h1 class="font-extrabold text-6xl text-text-black xl:w-[75%]">A barn house of this design has a striking appearance</h1>
+                <h1 class="font-black text-4xl md:text-5xl lg:text-6xl text-text-black xl:w-[75%]">A barn house of this design has a striking appearance</h1>
                 <p class="font-medium text-base text-text-light xl:w-[60%]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
                 metal accents, and large windows that flood the space with natural light.</p>
                 <button class="flex items-center py-2 px-4 bg-primary-color-light rounded-full justify-center">
@@ -126,16 +189,15 @@
     
 
     <!-- main section starts -->
-    <main class="mt-24">
+    <main class="mt-24 bg-bg-secondary px-4">
         <!-- About us section starts  -->
-        <div class="bg-bg-secondary">
-            <div class="container mx-auto">
-                <div class="relative">
-                    <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-12 items-center py-24">
+        <div class="">
+            <div class="container mx-auto relative">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 justify-between gap-12 items-center py-24">
                        <div class="order-2 flex justify-end">
-                            <img src="./assets/about-us.png" class="w-[580px] h-[600px] rounded-lg shadow-2xl"/>
+                            <img src="./assets/about-us.png" class="w-full lg:w-[580px] h-[600px] rounded-lg shadow-2xl"/>
                         </div>
-                        <div class="space-y-4">
+                        <div class="space-y-4 text-center lg:text-left">
                             <p class="py-2 px-3 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
                                 <!-- <i class="ri-arrow-right-line ml-2"></i> -->
                                 <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -144,20 +206,20 @@
                                     <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34"  stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"  stroke-linecap="round" />
                                 </svg>
                                 <span class="font-bold ml-2">About Us</span></p>
-                            <h1 class="text-5xl font-bold text-text-black">We design thoughtful, liveable spaces</h1>
+                            <h1 class="text-3xl font-black text-text-black md:text-5xl">We design thoughtful, <br> liveable spaces</h1>
                             <p class="py-6 font-medium text-text-dark text-base">
                                 At Rinterio, we offer rental homes that combine comfort and style. Our properties are carefully selected to enhance your living experience, blending modern amenities with practical design. Find a space that truly feels like home and supports your lifestyle.
                             </p>
             
-                            <div class="space-y-5">
-                                <div class="p-7 flex items-center space-x-6 bg-white rounded-lg">
+                            <div class="text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 md:gap-4 lg:space-y-3">
+                                <div class="p-5 lg:p-7 flex items-center space-x-6 bg-white rounded-lg">
                                     <img src="./assets/commercial.png" alt="">
                                     <div>
                                         <h4 class="font-extrabold text-lg text-text-dark">Commercial</h4>
-                                        <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style, perfect for businesses seeking dynamic and adaptable spaces.</p>
+                                        <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style, perfect for businesses seeking dynamic spaces.</p>
                                     </div>
                                 </div>
-                                <div class="p-7 flex items-center space-x-6 bg-white rounded-lg">
+                                <div class="p-5 lg:p-7 flex items-center space-x-6 bg-white rounded-lg">
                                     <img src="./assets/residential.png" alt="">
                                     <div>
                                         <h4 class="font-extrabold text-lg text-text-dark">Residential</h4>
@@ -168,10 +230,92 @@
                         </div>
                     </div>
                     <img src="./assets/Vector.png" alt="" class="absolute top-[5%] left-[-2%] hidden rotate-1 lg:block">
-                </div>
             </div>
+
+            <!-- stat section  -->
+             <div class="container mx-auto">
+                <div class="grid grid-cols-1 bg-white rounded-2xl w-full shadow p-8 space-y-6 md:grid-cols-2 lg:grid-cols-4 ">
+                    <div class="stat text-center space-y-2">
+                        
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor"
+                                class="size-10 text-text-light">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                            </svg>
+                        </div>
+                        <div class="stat-value">235+</div>
+                        <div class="text-base font-medium text-text-light">Happy Client Review</div>
+                    </div>
+                
+                    <div class="stat text-center space-y-2">
+                        <div class="flex justify-center">
+                        <svg width="31.500000" height="34.833252" viewBox="0 0 31.5 34.8333" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector"
+                                d="M30.74 12.63C30.74 10.73 30.74 9.79 30.28 8.99C29.82 8.2 29 7.74 27.36 6.81L18.99 2.09C17.4 1.19 16.61 0.75 15.75 0.75C14.88 0.75 14.09 1.19 12.51 2.09L4.13 6.81C2.49 7.74 1.67 8.2 1.21 8.99C0.75 9.79 0.75 10.73 0.75 12.63L0.75 20.55C0.75 26.93 0.75 30.12 2.7 32.1C4.65 34.08 7.79 34.08 14.08 34.08L17.41 34.08C23.7 34.08 26.84 34.08 28.79 32.1C30.75 30.12 30.75 26.93 30.75 20.55L30.74 12.63Z"
+                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" />
+                            <path id="Vector"
+                                d="M4.08 7.41L0.75 7.41M14.08 7.41L10.75 7.41M4.08 0.75L0.75 0.75M4.08 14.08L0.75 14.08M14.08 0.75L10.75 0.75M14.08 14.08L10.75 14.08"
+                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
+                        </svg>
+
+                        </div>
+                        <div class="stat-value">50+</div>
+                        <div class="text-base font-medium text-text-light">Work Departments</div>
+                    </div>
+                
+                    <div class="stat text-center space-y-2">
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                                class="size-10 text-text-light">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                            </svg>
+                        </div>
+                        <div class="stat-value">30k+</div>
+                        <div class="text-base font-medium text-text-light">Our Happy Client</div>
+                    </div>
+
+                    <div class="stat text-center space-y-2">
+                        <div class="stat-figure text-secondary">
+                        </div>
+                        <div class="flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+                                class="size-10 text-text-light">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                            </svg>
+                        </div>
+                        <div class="stat-value">307+</div>
+                        <div class="text-base font-medium text-text-light">Staff Members</div>
+                    </div>
+                </div>
+             </div>
+            <!-- stat section  -->
         </div>
         <!-- About us section ends -->
+
+        <!-- Our works process section starts  -->
+         <div class="container mx-auto mt-24">
+            <div class="space-y-4 text-center">
+                <p class="py-2 px-3 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
+                    <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
+                        <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34"  stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
+                    </svg>
+                    <span class="font-bold ml-2">How we works</span>
+                </p>
+                <h1 class="text-3xl font-black text-text-black md:text-5xl">We design thoughtful, <br> liveable spaces</h1>
+                <p class="py-6 font-medium text-text-dark text-base">
+                    At Rinterio, we offer rental homes that combine comfort and style. Our properties are carefully selected to
+                    enhance your living experience, blending modern amenities with practical design. Find a space that truly feels
+                    like home and supports your lifestyle.
+                </p>
+            </div>
+         </div>
+        <!-- Our works process section ends -->
     </main>
     <!-- main section ends -->
 
