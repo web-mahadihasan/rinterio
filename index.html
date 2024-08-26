@@ -28,12 +28,6 @@
                     backgroundImage: {
                         'project': "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);",
                     },
-                     gridTemplateColumns: {
-                        // Simple 16 column grid
-                         'custom-2': '2fr 1fr 1fr',
-                         'custom-3': '1fr 2fr 1fr',
-                         'custom-4': '1fr 1fr 2fr',
-                    },
                     colors: {
                         'white-color': 'rgb(255, 255, 255)',
                         'primary-color': '#ABEF5F',
@@ -105,42 +99,33 @@
             
             
                 <!-- hamburger  -->
-                <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <label class="btn btn-circle bg-white  swap swap-rotate">
-                            <!-- this hidden checkbox controls the state -->
-                            <input type="checkbox" />
-            
-                            <!-- hamburger icon -->
-                            <svg class="swap-off fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                viewBox="0 0 512 512">
-                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-                            </svg>
-            
-                            <!-- close icon -->
-                            <svg class="swap-on fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                viewBox="0 0 512 512">
-                                <polygon
-                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-                            </svg>
-                        </label>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen h-screen md:w-80 md:h-80 p-2 shadow space-y-3 flex flex-col items-center">
-                        <li><a href="#home" class="font-extrabold text-base text-black">Home</a></li>
-                        <li><a href="#services" class="text-base font-medium text-text-light">Services</a></li>
-                        <li><a href="#portfolio" class="text-base font-medium text-text-light">Portfolio</a></li>
-                        <li><a href="#blogs" class="text-base font-medium text-text-light">Blogs</a></li>
-                        <li><a href="#contact" class="text-base font-medium text-text-light">Contact Us</a></li>
-                    </ul>
-                </div>
+                
+                    <details tabindex="0" role="button" class="dropdown dropdown-end lg:hidden">
+                        <summary  role="button" class="btn btn-ghost"> 
+                            <div class="btn btn-circle bg-white ">
+                                <svg class=" fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 512 512">
+                                    <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <ul tabindex="0"
+                            class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen h-screen md:w-80 md:h-80 p-2 shadow space-y-3 flex flex-col items-center">
+                            <li><a href="#home" class="font-extrabold text-base text-black">Home</a></li>
+                            <li><a href="#services" class="text-base font-medium text-text-light">Services</a></li>
+                            <li><a href="#portfolio" class="text-base font-medium text-text-light">Portfolio</a></li>
+                            <li><a href="#blogs" class="text-base font-medium text-text-light">Blogs</a></li>
+                            <li><a href="#contact" class="text-base font-medium text-text-light">Contact Us</a></li>
+                        </ul>
+                    </details>
+                    <!-- hamburger  -->
                 <div class=" hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a href="#home" class="font-extrabold text-base text-black mr-2">Home</a></li>
-                        <li><a href="#services" class="text-base font-medium text-text-light mr-2">Services</a></li>
-                        <li><a href="#portfolio" class="text-base font-medium text-text-light mr-2">Portfolio</a></li>
-                        <li><a href="#blogs" class="text-base font-medium text-text-light mr-2">Blogs</a></li>
-                        <li><a href="#contact" class="text-base font-medium text-text-light mr-2">Contact Us</a></li>
+                        <li><a href="#home" class="font-extrabold text-base text-black ml-2">Home</a></li>
+                        <li><a href="#services" class="text-base font-medium text-text-light ml-2">Services</a></li>
+                        <li><a href="#portfolio" class="text-base font-medium text-text-light ml-2">Portfolio</a></li>
+                        <li><a href="#blogs" class="text-base font-medium text-text-light ml-2">Blogs</a></li>
+                        <li><a href="#contact" class="text-base font-medium text-text-light ml-2">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -441,7 +426,7 @@
                     <div
                         class="grid grid-cols-1 items-center space-y-24 mt-24 md:space-y-0 md:grid-cols-2 xl:grid-cols-4 justify-center justify-items-center gap-6 md:gap-y-24 lg:space-y-0">
                         <!-- part 1 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
+                        <div class="card card-compact shadow-custom-light relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-3.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -467,7 +452,7 @@
                             </div>
                         </div>
                         <!-- part 2 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
+                        <div class="card card-compact shadow-custom-light relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-2.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -493,7 +478,7 @@
                             </div>
                         </div>
                         <!-- part 3 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
+                        <div class="card card-compact shadow-custom-light relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-1.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -519,7 +504,7 @@
                             </div>
                         </div>
                         <!-- part 4 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
+                        <div class="card card-compact shadow-custom-light relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-4.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -568,7 +553,7 @@
                             </svg>
                             <span class="font-bold ml-2">See Our Review</span>
                         </p>
-                        <h1 class="text-3xl font-black text-text-black md:text-5xl">What Our User Say About Us</h1>
+                        <h1 class="text-3xl font-black text-text-black md:text-5xl">What Our Client Say About Us</h1>
                         <p class="py-6 font-medium text-text-dark text-base max-w-[670px] mx-auto">
                             “Our review section features authentic testimonials highlighting our team's expertise, creativity, and commitment to
                             delivering exceptional results. See how we’ve transformed visions into reality and exceeded expectations.”
@@ -1059,5 +1044,4 @@
     </footer>
     <!-- footer section ends -->
 </body>
-
 </html>
