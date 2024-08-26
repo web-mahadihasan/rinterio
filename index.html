@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome | Rinterio</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
     <!-- DaisyUI & Tailwind CDN link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -25,12 +26,19 @@
             theme: {
                 extend: {
                     backgroundImage: {
-                        'project': "url('../assets/bg-next.jpg')",
+                        'project': "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);",
+                    },
+                     gridTemplateColumns: {
+                        // Simple 16 column grid
+                         'custom-2': '2fr 1fr 1fr',
+                         'custom-3': '1fr 2fr 1fr',
+                         'custom-4': '1fr 1fr 2fr',
                     },
                     colors: {
                         'white-color': 'rgb(255, 255, 255)',
                         'primary-color': '#ABEF5F',
-                        'primary-color-light': 'rgba(171, 239, 95, 0.5)',
+                        'primary-color-light': 'rgba(171, 239, 95, 0.2)',
+                        'primary-color-darklight': 'rgba(171, 239, 95, 0.5)',
                         'text-light': 'rgb(115, 115, 115)',
                         'text-dark': 'rgb(73, 73, 73)',
                         'text-black': 'rgb(33, 33, 33)',
@@ -48,165 +56,134 @@
 
 <body>
     <!-- header section starts -->
-    <header class=" container mx-auto px-4 pt-10">
-        <div class="navbar justify-between flex">
-            <div class="flex justify-between lg:w-auto">
-                
-                <div class="flex items-center">
-                    <span class="p-1 bg-primary-color rounded-full mr-1">
-                        <!-- <i class="ri-arrow-right-up-line p-2 bg-primary-color align-middle mr-1 rounded-full"></i>
-                         -->
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="size-6 align-middle">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg>
-                    </span>
-                    <span class="font-extrabold text-3xl text-text-black">Rinterio</span>
-                </div>
-                <!-- extra div end korchi -->
-            </div>
-
-                <!-- ----- -->
-                 <!-- extra div add korlm -->
-            <!-- <div class="flex justify-between col-span-2"> -->
-                <div class=" list-none space-x-2 hidden md:flex lg:order-3">
-                    <li class="btn btn-circle bg-white-color">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </li>
-                    <li class="bg-white-color">
-                        <svg width="48.015961" height="47.016113" viewBox="0 0 48.016 48.0161" fill="none"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000"
-                                transform="translate(0.515961 0.500000) rotate(0.019056)" fill="#FFFFFF" fill-opacity="1.000000" />
-                            <path id="Vector"
-                                d="M20 28L27.26 28C31.75 28.01 32.44 25.19 33.26 21.08C33.5 19.89 33.62 19.3 33.34 18.9C33.05 18.51 32.5 18.51 31.4 18.51L18 18.5"
-                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
-                            <path id="Vector" d="M20 28L17.38 15.52C17.16 14.63 16.36 14 15.44 14L14.51 14" stroke="#737373"
-                                stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
-                            <path id="Vector" d="M20.88 28L20.47 28C19.11 28 18 29.15 18 30.57C18 30.81 18.18 31 18.41 31L29.5 31"
-                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
-                                stroke-linecap="round" />
-                            <path id="Vector"
-                                d="M22.5 34C21.67 34 21 33.33 21 32.5C21 31.67 21.67 31 22.5 31C23.33 31 24 31.67 24 32.5C24 33.33 23.33 34 22.5 34Z"
-                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" />
-                            <path id="Vector"
-                                d="M29.5 34C28.67 34 28 33.33 28 32.5C28 31.68 28.67 31 29.5 31C30.33 31.01 31 31.68 31 32.51C31 33.33 30.33 34.01 29.5 34Z"
-                                stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" />
-                            <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000"
-                                transform="translate(0.515961 0.500000) rotate(0.019056)" stroke="#E9E9E9" stroke-opacity="1.000000"
-                                stroke-width="1.000000" />
-                        </svg>
-                    </li>
-                    <li class="flex items-center py-2 px-3 bg-primary-color rounded-full">
-                        <span class="font-extrabold text-lg text-text-black">Book Consult</span>
-                        <span class="p-2 bg-text-black rounded-full ml-2">
+    <header class=" bg-project" id="home">
+        <div class="container mx-auto px-4 pt-10 pb-24">
+            <div class="navbar justify-between flex">
+                <div class="flex justify-between lg:w-auto md:flex-1 lg:flex-none">
+            
+                    <div class="flex items-center">
+                        <span class="p-1 bg-primary-color rounded-full mr-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-5 align-middle text-white">
+                                stroke="currentColor" class="size-6 align-middle">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </span>
+                        <span class="font-extrabold text-3xl text-text-black">Rinterio</span>
+                    </div>
+                </div>
+
+                <!-- Icons part -->
+                <div class=" list-none space-x-2 hidden md:flex lg:order-3">
+                    <li>
+                        <a class="btn btn-circle bg-white-color">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </a>
                     </li>
-                
+                    <li>
+                        <a class="btn btn-circle bg-white-color p-3 rounded-full border border-base-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#contact" class="flex items-center py-3 px-4 bg-primary-color rounded-full cursor-pointer">
+                            <span class="font-extrabold text-lg text-text-black">Book Consult</span>
+                            <span class="p-1 bg-text-black rounded-full ml-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="size-5 align-middle text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </span>
+                        </a>
+                    </li>         
                 </div>
-                <!-- ----- -->
-
-
-            <!-- ---  -->
-            <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <label class="btn btn-circle bg-white  swap swap-rotate">
-                        <!-- this hidden checkbox controls the state -->
-                        <input type="checkbox" />
             
-                        <!-- hamburger icon -->
-                        <svg class="swap-off fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                            viewBox="0 0 512 512">
-                            <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-                        </svg>
             
-                        <!-- close icon -->
-                        <svg class="swap-on fill-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                            viewBox="0 0 512 512">
-                            <polygon
-                                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-                        </svg>
-                    </label>
+                <!-- hamburger  -->
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <label class="btn btn-circle bg-white  swap swap-rotate">
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+            
+                            <!-- hamburger icon -->
+                            <svg class="swap-off fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                            </svg>
+            
+                            <!-- close icon -->
+                            <svg class="swap-on fill-black cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
+                        </label>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen h-screen md:w-80 md:h-80 p-2 shadow space-y-3 flex flex-col items-center">
+                        <li><a href="#home" class="font-extrabold text-base text-black">Home</a></li>
+                        <li><a href="#services" class="text-base font-medium text-text-light">Services</a></li>
+                        <li><a href="#portfolio" class="text-base font-medium text-text-light">Portfolio</a></li>
+                        <li><a href="#blogs" class="text-base font-medium text-text-light">Blogs</a></li>
+                        <li><a href="#contact" class="text-base font-medium text-text-light">Contact Us</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0"
-                    class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-screen h-screen md:w-80 md:h-80 p-2 shadow space-y-3 flex flex-col items-center">
-                    <li><a class="font-extrabold text-base text-black">Home</a></li>
-                    <li><a class="text-base font-medium text-text-light">Services</a></li>
-                    <li><a class="text-base font-medium text-text-light">Portfolio</a></li>
-                    <li><a class="text-base font-medium text-text-light">Blogs</a></li>
-                    <li><a class="text-base font-medium text-text-light">Contact Us</a></li>
-                </ul>
+                <div class=" hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#home" class="font-extrabold text-base text-black mr-2">Home</a></li>
+                        <li><a href="#services" class="text-base font-medium text-text-light mr-2">Services</a></li>
+                        <li><a href="#portfolio" class="text-base font-medium text-text-light mr-2">Portfolio</a></li>
+                        <li><a href="#blogs" class="text-base font-medium text-text-light mr-2">Blogs</a></li>
+                        <li><a href="#contact" class="text-base font-medium text-text-light mr-2">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- ---  -->
-            <div class=" hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a class="font-extrabold text-base text-black">Home</a></li>
-                    <li><a class="text-base font-medium text-text-light">Services</a></li>
-                    <li><a class="text-base font-medium text-text-light">Portfolio</a></li>
-                    <li><a class="text-base font-medium text-text-light">Blogs</a></li>
-                    <li><a class="text-base font-medium text-text-light">Contact Us</a></li>
-                </ul>
+            <!-- Banner section starts -->
+            <div class="flex flex-col items-center space-y-6">
+                <div class="banner-img">
+                    <img src="./assets/banner.png" alt="">
+                </div>
+                <div class="flex flex-col md:items-center text-center space-y-6">
+                    <h1 class="font-black text-4xl md:text-5xl lg:text-6xl text-text-black xl:w-[75%]">A barn house of this design
+                        has a striking appearance</h1>
+                    <p class="font-medium text-base text-text-light xl:w-[60%]">The barn house captivates with its blend of rustic
+                        charm and modern sophistication, featuring weathered wood, sleek
+                        metal accents, and large windows that flood the space with natural light.</p>
+                    <button class="flex items-center py-2 px-4 bg-primary-color-darklight rounded-full cursor-pointer justify-center">
+                        <span class="font-extrabold text-lg text-text-black">View Details</span>
+                        <span class="p-2 bg-primary-color rounded-full ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="size-5 align-middle text-black">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
             </div>
-        <!-- </div> -->
-            <!-- <div class=" list-none space-x-2 hidden md:flex md:order-2">
-                <li class="btn btn-circle bg-white-color">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </li>
-                <li class="bg-white-color">
-                    <svg width="48.015961" height="47.016113" viewBox="0 0 48.016 48.0161" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000" transform="translate(0.515961 0.500000) rotate(0.019056)" fill="#FFFFFF" fill-opacity="1.000000" /> <path id="Vector" d="M20 28L27.26 28C31.75 28.01 32.44 25.19 33.26 21.08C33.5 19.89 33.62 19.3 33.34 18.9C33.05 18.51 32.5 18.51 31.4 18.51L18 18.5" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />  <path id="Vector" d="M20 28L17.38 15.52C17.16 14.63 16.36 14 15.44 14L14.51 14" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" /> <path id="Vector" d="M20.88 28L20.47 28C19.11 28 18 29.15 18 30.57C18 30.81 18.18 31 18.41 31L29.5 31" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" /> <path id="Vector"  d="M22.5 34C21.67 34 21 33.33 21 32.5C21 31.67 21.67 31 22.5 31C23.33 31 24 31.67 24 32.5C24 33.33 23.33 34 22.5 34Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" /> <path id="Vector" d="M29.5 34C28.67 34 28 33.33 28 32.5C28 31.68 28.67 31 29.5 31C30.33 31.01 31 31.68 31 32.51C31 33.33 30.33 34.01 29.5 34Z" stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" /> <rect id="Frame 3" rx="23.500000" width="47.000000" height="47.000000" transform="translate(0.515961 0.500000) rotate(0.019056)" stroke="#E9E9E9" stroke-opacity="1.000000" stroke-width="1.000000" />
-                    </svg>
-                </li>
-                <li class="flex items-center py-2 px-3 bg-primary-color rounded-full">
-                    <span class="font-extrabold text-lg text-text-black">Book Consult</span>
-                <span class="p-1 bg-text-black rounded-full ml-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="size-6 align-middle text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                </span>
-                </li>
-                
-            </div> -->
+            <!-- Banner section ends -->
         </div>
-        <!-- Banner section starts -->
-         <div class="flex flex-col items-center space-y-6">
-            <div class="banner-img">
-                <img src="./assets/banner.png" alt="">
-            </div>
-            <div class="flex flex-col md:items-center text-center space-y-6">
-                <h1 class="font-black text-4xl md:text-5xl lg:text-6xl text-text-black xl:w-[75%]">A barn house of this design has a striking appearance</h1>
-                <p class="font-medium text-base text-text-light xl:w-[60%]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
-                metal accents, and large windows that flood the space with natural light.</p>
-                <button class="flex items-center py-2 px-4 bg-primary-color-light rounded-full justify-center">
-                    <span class="font-bold text-lg text-text-black">View Details</span>
-                    <span class=""><i class="ri-arrow-right-up-line p-2 bg-primary-color text-white align-middle ml-1 rounded-full"></i></span>
-                </button>
-            </div>
-         </div>
-        <!-- Banner section ends -->
-
     </header>
     <!-- header section ends -->
     
 
     <!-- main section starts -->
-    <main class="mt-24">
+    <main class="">
         <!-- About us section starts  -->
-         <section class="bg-bg-secondary px-4">
+         <section class="bg-bg-secondary px-4" id="services">
             <div class="">
                 <div class="container mx-auto relative">
                         <div class="grid grid-cols-1 lg:grid-cols-2 justify-between gap-12 items-center py-24">
-                        <div class="order-2 flex justify-end">
-                                <img src="./assets/about-us.png" class="w-full lg:w-[580px] h-[600px] rounded-lg shadow-2xl"/>
+                        <div class="order-2 flex justify-end h-full">
+                                <img src="./assets/about-us.png" class="w-full lg:w-[580px] h-[400px] lg:h-full rounded-2xl shadow-2xl"/>
                             </div>
                             <div class="space-y-4 text-center lg:text-left">
                                 <p class="py-2 px-4 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
-                                    <!-- <i class="ri-arrow-right-line ml-2"></i> -->
                                     <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000"  stroke-linecap="round" />
@@ -241,7 +218,8 @@
 
                 <!-- stat section  -->
                 <div class="container mx-auto">
-                    <div class="grid grid-cols-1 bg-white rounded-2xl w-full shadow-sm p-8 space-y-6 md:grid-cols-2 lg:grid-cols-4 ">
+                    <div class="grid grid-cols-1 gap-y-6 bg-white rounded-2xl w-full shadow-sm p-8 space-y-6 justify-between md:space-y-0 md:grid-cols-2 lg:grid-cols-4 ">
+                        <!-- stat 1 -->
                         <div class="stat text-center space-y-2">
                             
                             <div class="flex justify-center">
@@ -254,24 +232,19 @@
                             <div class="stat-value">235+</div>
                             <div class="text-base font-medium text-text-light">Happy Client Review</div>
                         </div>
-                    
-                        <div class="stat text-center space-y-2">
+                        <!-- stat 2 -->
+                        <div class="stat text-center space-y-3">
                             <div class="flex justify-center">
-                            <svg width="31.500000" height="34.833252" viewBox="0 0 31.5 34.8333" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path id="Vector"
-                                    d="M30.74 12.63C30.74 10.73 30.74 9.79 30.28 8.99C29.82 8.2 29 7.74 27.36 6.81L18.99 2.09C17.4 1.19 16.61 0.75 15.75 0.75C14.88 0.75 14.09 1.19 12.51 2.09L4.13 6.81C2.49 7.74 1.67 8.2 1.21 8.99C0.75 9.79 0.75 10.73 0.75 12.63L0.75 20.55C0.75 26.93 0.75 30.12 2.7 32.1C4.65 34.08 7.79 34.08 14.08 34.08L17.41 34.08C23.7 34.08 26.84 34.08 28.79 32.1C30.75 30.12 30.75 26.93 30.75 20.55L30.74 12.63Z"
-                                    stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" />
-                                <path id="Vector"
-                                    d="M4.08 7.41L0.75 7.41M14.08 7.41L10.75 7.41M4.08 0.75L0.75 0.75M4.08 14.08L0.75 14.08M14.08 0.75L10.75 0.75M14.08 14.08L10.75 14.08"
-                                    stroke="#737373" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
-                            </svg>
-
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor"
+                                    class="size-10 text-text-light">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                                </svg>
                             </div>
                             <div class="stat-value">50+</div>
                             <div class="text-base font-medium text-text-light">Work Departments</div>
                         </div>
-                    
+                        <!-- stat 3 -->
                         <div class="stat text-center space-y-2">
                             <div class="flex justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
@@ -283,7 +256,7 @@
                             <div class="stat-value">30k+</div>
                             <div class="text-base font-medium text-text-light">Our Happy Client</div>
                         </div>
-
+                        <!-- stat 4 -->
                         <div class="stat text-center space-y-2">
                             <div class="stat-figure text-secondary">
                             </div>
@@ -304,7 +277,7 @@
             <!-- About us section ends -->
 
             <!-- Our works process section starts  -->
-            <div class="container mx-auto mt-24">
+            <div class="container mx-auto py-24">
                 <div class="space-y-4 text-center">
                     <p class="py-2 px-4 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
                         <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
@@ -362,8 +335,8 @@
         <!-- Our works process section ends -->
 
         <!-- Lasted portfolio starts  -->
-         <section class="w-full lg:bg-white mt-24 px-4">
-                <div class="container mx-auto lg:py-24">
+         <section class="w-full lg:bg-white px-4" id="portfolio">
+                <div class="container mx-auto py-24">
                     <div class="space-y-4 text-center">
                         <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
                             <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
@@ -386,7 +359,7 @@
                  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12 mt-8">
                     <!-- Cards 1 -->
                     <div class=" flex flex-col gap-6 p-5 rounded-xl shadow-custom-light md:flex-row md:col-span-2 lg:col-span-8 order-1">
-                        <img src="./assets/portfolio-1.png" alt="commercial" class="w-full md:w-fit h-[200px]">
+                        <img src="./assets/portfolio-1.png" alt="commercial" class="w-full md:w-fit lg:w-fit h-[200px]">
                         <div class="space-y-4">
                             <h4 class="font-extrabold text-2xl text-text-dark">Commercial</h4>
                             <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style, perfect for businesses seeking dynamic spaces.</p>
@@ -411,7 +384,7 @@
                     </div>
                     <!-- Cards 4 -->
                     <div class="flex flex-col gap-6 p-5 rounded-xl shadow-custom-light md:flex-row md:col-span-2 lg:col-span-6 order-4">
-                        <img src="./assets/portfolio-4.png" alt="commercial" class="w-full md:w-fit h-[200px]">
+                        <img src="./assets/portfolio-4.png" alt="commercial" class="w-full md:w-fit lg:w-[200px] xl:w-fit h-[200px]">
                         <div class="space-y-4">
                             <h4 class="font-extrabold text-2xl text-text-dark">Residential</h4>
                             <p class="text-base font-medium text-text-light mt-2">Modern commercial houses designed for functionality and style,
@@ -440,14 +413,14 @@
          </section>
         <!-- Lasted portfolio ends -->
 
-        <!-- Bonus part Team & Client review with carousel  -->
+        <!-- Bonus part Our Team & Client review with carousel  -->
 
         <!-- Our team section starts  -->
         <section class="bg-bg-secondary px-4">
             <div>
                 <div class="p-4 py-24 container mx-auto">
                     <div class="space-y-4 text-center">
-                        <p class="py-2 px-4 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
+                        <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
                             <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000"
@@ -468,7 +441,7 @@
                     <div
                         class="grid grid-cols-1 items-center space-y-24 mt-24 md:space-y-0 md:grid-cols-2 xl:grid-cols-4 justify-center justify-items-center gap-6 md:gap-y-24 lg:space-y-0">
                         <!-- part 1 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-light max-w-[365px]">
+                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-3.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -487,14 +460,14 @@
                                 </div>
                                 <div
                                     class="flex items-center justify-between w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
-                                    <a href="" class="text-3xl"><i class="ri-facebook-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-twitter-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-instagram-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0863f7] hover:-translate-y-1 duration-300"><i class="ri-facebook-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0077b5] hover:-translate-y-1 duration-300"><i class="ri-linkedin-box-fill"></i></i></a>
+                                    <a href="" class="text-3xl hover:text-[#f70075] hover:-translate-y-1 duration-300"><i class="ri-instagram-fill"></i></a>
                                 </div>
                             </div>
                         </div>
                         <!-- part 2 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-light max-w-[365px]">
+                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-2.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -513,14 +486,14 @@
                                 </div>
                                 <div
                                     class="flex items-center justify-between w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
-                                    <a href="" class="text-3xl"><i class="ri-facebook-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-twitter-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-instagram-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0863f7] hover:-translate-y-1 duration-300"><i class="ri-facebook-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0077b5] hover:-translate-y-1 duration-300"><i class="ri-linkedin-box-fill"></i></i></a>
+                                    <a href="" class="text-3xl hover:text-[#f70075] hover:-translate-y-1 duration-300"><i class="ri-instagram-fill"></i></a>
                                 </div>
                             </div>
                         </div>
                         <!-- part 3 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-light max-w-[365px]">
+                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-1.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -539,14 +512,14 @@
                                 </div>
                                 <div
                                     class="flex items-center justify-between w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
-                                    <a href="" class="text-3xl"><i class="ri-facebook-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-twitter-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-instagram-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0863f7] hover:-translate-y-1 duration-300"><i class="ri-facebook-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0077b5] hover:-translate-y-1 duration-300"><i class="ri-linkedin-box-fill"></i></i></a>
+                                    <a href="" class="text-3xl hover:text-[#f70075] hover:-translate-y-1 duration-300"><i class="ri-instagram-fill"></i></a>
                                 </div>
                             </div>
                         </div>
                         <!-- part 4 -->
-                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-light max-w-[365px]">
+                        <div class="card card-compact shadow-xl relative border-2 border-primary-color-darklight max-w-[365px]">
                             <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
                                 <img alt="profile" src="./assets/profile-4.jpg"
                                     class="mx-auto object-cover rounded-lg h-40 w-40  border-2 border-primary-color z-50" />
@@ -560,14 +533,14 @@
                                         Sr. Architecture
                                     </p>
                                     <p class="py-4 text-base text-text-light font-medium">
-                                        Bringing over a decade of experience in designing and overseeing complex architectural projects.
+                                        Bringing over a decade of experience in designing and overseeing complex projects.
                                     </p>
                                 </div>
                                 <div
                                     class="flex items-center justify-between w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
-                                    <a href="" class="text-3xl"><i class="ri-facebook-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-twitter-fill"></i></a>
-                                    <a href="" class="text-3xl"><i class="ri-instagram-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0863f7] hover:-translate-y-1 duration-300"><i class="ri-facebook-fill"></i></a>
+                                    <a href="" class="text-3xl hover:text-[#0077b5] hover:-translate-y-1 duration-300"><i class="ri-linkedin-box-fill"></i></i></a>
+                                    <a href="" class="text-3xl hover:text-[#f70075] hover:-translate-y-1 duration-300"><i class="ri-instagram-fill"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -584,7 +557,7 @@
             <div>
                 <div class="container mx-auto mt-16">
                     <div class="space-y-4 text-center">
-                        <p class="py-2 px-4 bg-white rounded-full text-text-dark max-w-max inline-flex items-center">
+                        <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
                             <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000"
@@ -795,8 +768,7 @@
                                                 </svg>
                                                 Rinterio is a highly professional team that blends innovative design with effective
                                                 project management. They were proactive in their communication and dedicated to
-                                                delivering exceptional results. Highly recommended for any design
-                                                needs.
+                                                delivering exceptional results.
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
                                                     class="absolute right-[8%] w-8 h-8 text-black">
                                                     <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
@@ -836,7 +808,7 @@
         
 
             <!-- Read News & Articles section start  -->
-            <div class="container mx-auto py-24">
+            <div class="container mx-auto py-24" id="blogs">
                 <div class="space-y-4 text-center">
                     <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
                         <svg width="17.747131" height="16.970703" viewBox="0 0 17.7471 16.9707" fill="none"
@@ -986,7 +958,7 @@
 
 
         <!-- Project discuss section starts  -->
-         <section class="bg-[url('./assets/bg-next.jpg')] bg-no-repeat bg-center bg-cover mt-1 py-24">
+         <section class="bg-[url('./assets/bg-next.jpg')] bg-[#FFF] bg-blend-overlay bg-opacity-50 bg-no-repeat bg-center bg-cover mt-1 py-24" id="contact">
             <div class="container mx-auto px-4">
                 <div class="space-y-4 text-center">
                     <p class="py-2 px-4 bg-primary-color-light rounded-full text-text-dark max-w-max inline-flex items-center">
@@ -1022,9 +994,9 @@
                         <textarea class="textarea w-full rounded-2xl outline-none border-none py-6 ont-medium text-sm text-[#A0A0A0]" placeholder="Write your message here " rows="7"></textarea>
                     </div>
                     <div>
-                        <button class="flex items-center py-2 px-3 bg-primary-color rounded-full cursor-pointer w-full justify-center">
+                        <button class="flex items-center p-3 bg-primary-color rounded-full cursor-pointer w-full justify-center">
                             <span class="font-extrabold text-lg text-text-black">Book Consult</span>
-                            <span class="p-2 bg-text-black rounded-full ml-2">
+                            <span class="p-1 bg-text-black rounded-full ml-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                     class="size-5 align-middle text-white">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -1063,29 +1035,29 @@
                 <nav class="flex justify-center">
                     <div class="">
                        <ul class="grid grid-cols-1 md:grid-cols-5 md:gap-12 xl:gap-24 list-none font-medium text-base space-y-4 md:space-y-0 text-center">
-                        <li><a href="#" class="text-[#E9E9E9] opacity-90">Home</a></li>
-                        <li><a href="#" class="text-[#E9E9E9] opacity-90">Services</a></li>
-                        <li><a href="#" class="text-[#E9E9E9] opacity-90">Portfolio</a></li>
-                        <li><a href="#" class="text-[#E9E9E9] opacity-90">Blogs</a></li>
-                        <li><a href="#" class="text-[#E9E9E9] opacity-90">Contact Us</a></li>
+                        <li><a href="#home" class="text-[#E9E9E9] opacity-90">Home</a></li>
+                        <li><a href="#services" class="text-[#E9E9E9] opacity-90">Services</a></li>
+                        <li><a href="#portfolio" class="text-[#E9E9E9] opacity-90">Portfolio</a></li>
+                        <li><a href="#blogs" class="text-[#E9E9E9] opacity-90">Blogs</a></li>
+                        <li><a href="#contact" class="text-[#E9E9E9] opacity-90">Contact Us</a></li>
                        </ul>
                     </div>
                 </nav>
                 <div class="flex justify-center">
-                    <div class="flex items-center py-2 px-3 bg-primary-color rounded-full">
+                    <a href="#contact" class="flex items-center py-3 px-4 bg-primary-color rounded-full cursor-pointer">
                         <span class="font-extrabold text-lg text-text-black">Book Consult</span>
-                        <span class="p-2 bg-text-black rounded-full ml-2">
+                        <span class="p-1 bg-text-black rounded-full ml-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                 class="size-5 align-middle text-white">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- footer section ends --> 
+    <!-- footer section ends -->
 </body>
 
 </html>
